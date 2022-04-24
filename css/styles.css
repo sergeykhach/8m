@@ -1,0 +1,701 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/*flex-boxi karevor kanonner!!!
+1. flexy talis enq cnogh elementin!.
+2. display: flex; - hrahangov cnox elementin talis enq flex ev ira erexeqy entarkvum en flexi kanonnerin.
+3. flex-direction; talis enq ughutyun- x=row -horizonakan, y=column -ughahayac.
+
+  flex-direction: row (default arjeq)-cankanum enq vor cnogh elemennty erexanerin irar koghq dasavori
+  flex-direction: column - cankanum enq vor cnogh elemennty erexanerin irar tak dasavori
+
+4.flex-wrap: wrap  -nshanakum e elementnerin tujl enq talis, ancnel hajord togh seghman jamanak. verevic nerqev hertakanutyamb 
+  flex-wrap: nowrap (default) argelum enq toghadardz
+  flex-wrap: wrap-reverse -nshanakum e elementnerin tujl enq talis, ancnel hajord togh seghman jamanak. nerqevic verev hertakanutyamb
+5.flex-flow: row nowrap - miangamic poxarinum a flex-direction ev flex-wrap hrahangnerin. 
+
+6.align-self ev order hrahangnery talis enq childerin kam itemnerin voch te cnoghin.
+*/
+
+/*header1 down*/
+.header1{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 3px auto; /* verevic u nerqevic u lini kentronum*/
+  max-width: 100%;
+  height: 35px;
+  background: #4b0071;
+  
+}
+.ul1{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;  
+}
+
+.currency{
+  max-width: 120px;
+  height: 100%;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 35px;
+  padding-left: 50px; 
+  font-family: monospace;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.language{
+  max-width: 120px;
+  height: 100%;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 35px;
+  padding-left: 50px; 
+  font-family: monospace;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.login{
+  max-width: 120px;
+  height: 100%;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 35px;
+  padding-left: 50px; 
+  font-family: monospace;
+  font-weight: 900;
+  font-size: larger;
+}
+.login:hover{
+  color: red;
+}
+.country1{
+  color: whitesmoke;
+  text-align: center;
+  line-height: 35px;
+  font-family: monospace;
+  padding-right: 50px;
+  font-weight: 900;
+  font-size: larger;
+}
+/*header1 up */
+
+/*header2 down */
+.header2 {
+  display: flex;
+  flex-flow: row nowrap; /*ushadir sarqel medianer*/
+  justify-content: space-around;
+  margin: 3px auto; 
+  max-width: 100%;
+  height: 105px;
+  border-bottom: 2px solid #4b0071;
+}
+.logo1{
+	max-width: 300px;
+	height: auto;
+  opacity: 0.85;
+  transition: 0.7s;
+  text-align: center;  
+}
+     .logo1:hover{
+       opacity: 1;
+       border-bottom:2px solid rgb(100, 5, 5); 
+       border-radius: 20%;
+}
+
+#searchform{
+  display: flex;
+}
+
+.search{
+  max-width: 300px;
+  height: 100%; 
+  padding-top: 35px;  
+}
+.search1{
+  width: 300px;
+  height: 30px;
+  background-color:white;
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: bold;
+  border:2px solid rgb(100, 5, 5);
+  border-radius: 7px; 
+  color:rgb(100, 5, 5)  
+}
+#searchform button{
+  width: 60px;
+  height: 30px;
+  background: color rgba(78, 2, 113, 0.658);
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border:2px solid rgb(100, 5, 5);
+  border-radius: 7px; 
+  color:rgb(100, 5, 5)
+}
+#searchform button:hover{
+  background: red;
+}
+.phone{
+  max-width: 150px;
+  height: 100%;
+  color: rgb(240, 11, 11);
+  text-align: center;
+  line-height: 35px;
+  padding-top: 15px; 
+  font-family: monospace;
+  font-weight: 900;
+  font-size: x-large;
+}
+#phone1{
+  background: #4b0071;
+  font-style: italic;
+}
+
+.basket > img{
+  max-width: 100px;
+	height: auto;
+  text-align: center;
+}   
+
+/*header2 up */
+
+/*header3 down*/
+
+.header3{
+   /*flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;*/
+  max-width: 100%;
+  height: 45px;
+  background: #4b0071;
+  border-bottom: 2px solid #4b0071;
+}
+.header3 > .nav3 > .ul3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+.header3 > .nav3 > .ul3 > li > a{
+  text-align: center;
+  line-height: 35px;
+  padding-top: 15px;   
+  font-family: monospace;
+  font-weight: 900;
+  font-size: x-large;
+  color: aquamarine;
+}
+.header3 > .nav3 > .ul3 > li > a:hover{
+  color: red;
+}
+/*header 3 up*/
+
+/*main down*/
+.mainup{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+/*sidebar 1 down*/
+.sidebar1{
+  width: 20%;
+  min-width: 200px;
+  max-width: 250px;
+  height: 300px;
+}
+/*.side1{
+  
+  width: 200px;
+  height: 250px;
+  border: 2px solid #4b0071;
+  padding-left: 50px;
+  padding-top: 10px;
+  background: #00aca3;
+  margin-left: 30px;
+}*/
+.ulside1{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  margin-top: 10px; 
+  max-width: 200px;
+  height: 400px;
+  background: #4b0071;
+  border-radius: 7px;
+}
+.ulside1 > li{
+  width: 300px;
+  height: 35px;
+  border: 2px solid #4b0071;
+  text-align: center;
+  line-height: 35px; 
+  background: #00aca3;
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+.ulside1 > li > a:hover{
+  color: red;
+  font-size: 20px;
+}
+/*sidebar 1 up*/
+
+/*dark psichodelia down*/
+.dark{
+max-width: 750px;
+max-height: 400px;
+margin-top: 10px; 
+padding-left: 50px;
+border-radius: 7px;
+position: relative; /*kaxumy hastatum enq taki .infoyi het ev 500px cankacac popoxutyan depqum mejic durs chi galis*/
+overflow: hidden; /*bordernery kloracneluc heto vor ceric taki sherty cherava hoveri jamanak*/
+}
+
+.dark > img{
+  max-width: 100%;
+  max-height: fit-content;
+  border-radius: 7px;
+}
+/*.dark{
+   border: 2px solid #4b0071;
+  border-radius: 7px;
+  margin-top: 10px; 
+  padding: 15px;
+  margin: 10% auto;*/
+ /* position: relative; kaxumy hastatum enq taki .infoyi het ev 500px cankacac popoxutyan depqum mejic durs chi galis*/
+ /* overflow: hidden; bordernery kloracneluc heto vor ceric taki sherty cherava hoveri jamanak
+} */
+
+.dark > .info{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  opacity:1; /*tapancik sarqecinq*/
+  transition: 0.8s; /*vor sahun kerpov ancni*/  
+}
+
+.dark > .info > h4{
+  font-size: 60px; 
+  font-family: arial; 
+  color: whitesmoke;  
+  margin-left: 50px;
+}
+.dark > .info > h4 > span{
+color: rgb(240, 11, 11);
+}
+
+.someclass{  
+background: black;
+transition: 1s cubic-bezier(0,1.74,1,-0.56); /*cubic-bezier.com kayqic; ease, linear, ease-in kam costum*/
+border-radius: 30px;
+  
+}
+.someclass:hover{
+  background: pink;
+  transform: scale(1.3) /*scaleX- erkaruma,scaleY-boyovanuma*/;
+  transform: translate(200px); /*translateX- ajic dzax,translateY-verevic nerqev*/
+  transform: rotate(360deg); /*apsos chfrac, div i mej pti dneyi erevi*/
+}
+
+.dark > .img1{
+  width: 100%;
+}
+
+.dark > .img1 > img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+/*dark psichodelia up*/
+
+/* sidebar2 down*/
+.sidebar2{
+  max-width: 350px;
+  border: 2px solid #4b0071;
+  border-radius: 7px;
+  margin-top: 10px; 
+ /* padding: 15px;
+  margin: 10% auto;*/
+  position: relative; /*kaxumy hastatum enq taki .infoyi het ev 500px cankacac popoxutyan depqum mejic durs chi galis*/
+  overflow: hidden; /*bordernery kloracneluc heto vor ceric taki sherty cherava hoveri jamanak*/
+}
+
+.sidebar2 > .info{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(170, 167, 167, 0.3);
+  opacity:0; /*tapancik sarqecinq*/
+  transition: 0.8s; /*vor sahun kerpov ancni*/
+}
+
+.sidebar2 > h2{
+  font-size: 25px; 
+  color: red;   
+  text-align: center;
+  font-family: monospace;
+}
+
+.sidebar2 > .info > h4{
+  font-size: 20px; 
+  font-family: arial; 
+  color: #4b0071;  
+}
+
+.sidebar2 > .info > p{
+  font-size: 20px;
+  text-align: center;
+  margin: 15px 0;   
+  color: #4b0071;  
+}
+
+.sidebar2 > .info > button{
+  background: none;   
+  border: 2px solid #00aca3;
+  padding: 15px 60px;
+  color: #00aca3;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sidebar2 > .info > button:hover{
+  background: #fff;
+  color: rgb(161, 10, 10);
+  border: 3px solid rgb(143, 6, 6);
+  font-weight: bold;
+}
+
+.sidebart2> .img{
+  width: 100%;
+}
+
+.sidebar2> .img > img {
+  width: 100%;
+}
+
+.sidebar2:hover .info{
+  opacity: 1;
+}
+
+/*sidebar 2 up*/
+
+/*separation down*/
+.separation{
+  width: 100%;
+  height: 35px;
+  border-bottom:3px double #4b0071;
+  border-top: 3px double #4b0071; ;
+  background: #00aca3;
+  margin-top: 10px;
+}
+
+.separation h1{
+  font-weight: bold;
+  font-family: monospace;
+  color: rgb(100, 5, 5);
+  text-align: start;
+  margin-left: 50px;
+}
+.separation h1:hover{
+  font-weight: bolder;
+  font-family: monospace;
+  color: red;
+}
+/*separation up*/
+
+/*catalog down*/
+.catalog{
+  display: flex;
+  justify-content: space-around;  
+  flex-flow: row wrap;
+}
+.catalog_item{
+  max-width: 350px;
+  min-width: 220px;
+  min-height: 400px;
+  border: 2px solid #4b0071;
+  border-radius: 7px;
+  margin-top: 10px; 
+ /* padding: 15px;
+  margin: 10% auto;*/
+  position: relative; /*kaxumy hastatum enq taki .infoyi het ev 500px cankacac popoxutyan depqum mejic durs chi galis*/
+  overflow: hidden; /*bordernery kloracneluc heto vor ceric taki sherty cherava hoveri jamanak*/
+}
+
+.catalog_item > .info{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(170, 167, 167, 0.3);
+  opacity:0; /*tapancik sarqecinq*/
+  transition: 0.8s; /*vor sahun kerpov ancni*/
+}
+
+.catalog_item > h2{
+  font-size: 25px; 
+  color: rgb(100, 5, 5);   
+  text-align: center;
+  font-family: monospace;
+}
+
+.catalog_item > .info > h4{
+  font-size: 20px; 
+  font-family: arial; 
+  color: #4b0071;  
+}
+
+.catalog_item > .info > p{
+  font-size: 20px;
+  text-align: center;
+  margin: 15px 0;   
+  color: #4b0071;  
+}
+
+.catalog_item > .info > button{
+  background: none;   
+  border: 2px solid #00aca3;
+  padding: 15px 60px;
+  color: #00aca3;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.catalog_item > .info > button:hover{
+  background: #fff;
+  color: rgb(161, 10, 10);
+  border: 3px solid rgb(143, 6, 6);
+  font-weight: bold;
+}
+
+.catalog_item> .img{
+  width: 100%;
+}
+
+.catalog_item> .img > img {
+  width: 100%;
+}
+
+.catalog_item:hover .info{
+  opacity: 1;
+}
+
+/*catalog up*/
+
+/*next_page down*/
+.next_page{
+  text-align: end;
+  font-family: monospace;
+  color: rgb(100, 5, 5);
+  padding: 20px;
+}
+.next_page a{
+  color: #00aca3;
+  font-size: 22px;
+}
+.next_page a:hover{
+color: red;
+font-size: 23px;
+}
+
+/*next_page up*/
+
+/*back_page down (erkrordakan ejeri hamar)*/
+.back{
+  text-align: start;
+  font-family: monospace;
+  color: rgb(100, 5, 5);
+  padding: 20px;
+}
+.back a{
+  color: #00aca3;
+  font-size: 22px;
+}
+.back a:hover{
+color: red;
+font-size: 23px;
+}
+
+/*back_page down (erkrordakan ejeri hamar)
+
+/*main up*/
+
+/*footer down*/
+.footer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 100%;
+  min-height: 150px;
+  background: #4b0071;
+}
+
+#animation1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*sranic verevi ereq toghov divi meji gracy bervec kentron shrjani*/
+  width:150px ;
+  height: 150px;
+  background: whitesmoke;
+  margin: 30px;
+  margin-left: 0;
+  border: 2px solid #00aca3;
+  border-radius: 50%;
+  animation: rotateanime 3s infinite alternate;
+  color: rgb(100, 5, 5) ;
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: arial;
+}
+
+@keyframes rotateanime {
+  from{
+      transform: rotate(0deg);
+
+  }
+  to{
+      transform: rotate(360deg);
+
+  }
+}
+.footer2{
+  background:url("../img/grafiti.jpg");
+  background-size: cover; /*auto, cover, 100%*/
+  background-repeat: no-repeat;
+  background-position: 100% 100%; /* x, y,|0% 0% */
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+  margin-right: 0;
+  border: 2px solid #00aca3;
+  border-radius: 7px;
+}
+.footer1{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.foota{
+  line-height: 35px; 
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+
+.foota:hover{
+  font-size: 19px;
+  color: rgb(143, 6, 6);
+}
+
+/*footer up*/
+
+
+/*login.html-i cssner down*/
+.login_main{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: arial;
+  font-weight: bold;
+  color: rgb(100, 5, 5);
+}
+
+.login_main > #name, #lastname, #address, #email, #tell, #password, #choose_file {
+  width: 300px;
+  height: 30px;
+  background-color:white;
+  font-size: 18px;
+  font-family: arial;
+  font-weight: bold;
+  border:2px solid rgb(100, 5, 5);
+  border-radius: 7px; 
+  color:rgb(100, 5, 5) 
+}
+#choose_file:hover{
+  font-size: 19px;
+  color: red;
+}
+
+/*login.html-i cssner up*/
+
+
+
+
+  /*flex-flow: column wrap;
+  justify-content: center;*/ /* flex-start-(default)- asum enq petqa gan cnoghi skizb; flex-end gnuma verj; center;
+  -beruma mejtegh;  space-between -havasar razryva talis aranqnerum; space-around -nuyna inch beetweny+skzbic u verjic el dranc kesi chap bacvacqa talis
+  space-evenly -havasar aranqner bolor koghm*/
+     
+  /* flex-direction: row; - row-reverse kangnum en verjum ev hashvum en ajic dzax*/
+  /*flex-direction: column-reverse; kangnum en irar tak nerqevic verev nerqevi toghic */
+  /*flex-wrap: nowrap;*/
+  /*align-items: flex-start; erb justify contenty ashxatum a x-ov, align-itemsy ashxatum a y-ov, ev hakaraky
+  align-items: stretch; -(default) elementnery dzgtum en align-itemsi ughutyamb minchev verj
+  flex-start - tanum a skizb, flex-end -tanum en verj, center-mejtegha tanum
+  */
+  /* align-content: flex-end;ogtagorcum enq ete uzum enq mi qani toghum elementnery bashxenq, i tarberutyun align-itemsi-1toghi
+  nuyn arjeqnery uni align-itemsy*/
+ /*  margin: 10px auto; verevic u nerqevic 80px herevorutyun u lini kentronum*/
+ 
+
+
+ /* width: 100px; align-items: stretch-i depqum ushadir petq e linel sranc arjeq chtal*/
+  /*height: 100px; align-items: stretch-i depqum ushadir petq e linel sranc arjeq chtal*/
+   /*line-height: 100px; toghi bardzrutyunna*/
+  
+
+
+  /*flex-flow: column wrap;
+  justify-content: center;*/ /* flex-start-(default)- asum enq petqa gan cnoghi skizb; flex-end gnuma verj; center;
+  -beruma mejtegh;  space-between -havasar razryva talis aranqnerum; space-around -nuyna inch beetweny+skzbic u verjic el dranc kesi chap bacvacqa talis
+  space-evenly -havasar aranqner bolor koghm*/
+     
+  /*flex-direction: column  - row-reverse kangnum en verjum ev hashvum en ajic dzax*/
+  /*flex-direction: column-reverse; kangnum en irar tak nerqevic verev nerqevi toghic */
+  /*flex-wrap: nowrap;*/
+  /*align-items: flex-start; erb justify contenty ashxatum a x-ov, align-itemsy ashxatum a y-ov, ev hakaraky
+  align-items: stretch; -(default) elementnery dzgtum en align-itemsi ughutyamb minchev verj
+  flex-start - tanum a skizb, flex-end -tanum en verj, center-mejtegha tanum
+  */
+  /* align-content: flex-end;ogtagorcum enq ete uzum enq mi qani toghum elementnery bashxenq, i tarberutyun align-itemsi-1toghi
+  nuyn arjeqnery uni align-itemsy*/
+  
+
